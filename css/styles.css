@@ -94,8 +94,13 @@ body {
 /*Герой*/
 
 .hero{
+    padding-top: 195px;
+    padding-bottom: 205px;
+
     text-align: center;
     background-color: #2F303A;
+
+    outline: 2px solid tomato;
 }
 
 .hero .title{
@@ -146,7 +151,12 @@ body {
 .section{}
 
 .benefits{
+    padding-top: 89px;
+    padding-bottom: 94px;
+
     background-color: var(--benefits-background-color);
+
+    outline: 2px solid tomato;
 }
 
 .move-title{
@@ -179,7 +189,12 @@ display: none;
 
 
 .specialization{
+    padding-top: 0;
+    padding-bottom: 121px;
+
     background-color: var(--benefits-background-color);
+
+    outline: 2px solid tomato;
 }
 
 h2{
@@ -189,6 +204,11 @@ h2{
     text-align: center;
 }
 
+.specialization .title{
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
 .specialization-list{}
 
 
@@ -196,14 +216,40 @@ h2{
 
 
 .team{
+    padding-top: 67px;
+    padding-bottom: 94px;
+
     background-color: var(--team-background-color);
+
+    outline: 2px solid tomato;
+}
+
+.team .title{
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 .team-list{
-    text-align: center;  
+    text-align: center;
+    
+}
+
+.team-list>li{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    background-color: #FFFFFF;
+}
+
+.team .team-list img{
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
 .team .team-list h3{
+    margin-top: 0;
+    margin-bottom: 10px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.27;
@@ -212,6 +258,9 @@ h2{
 }
 
 .team .team-list p{
+    margin-top: 0;
+    margin-bottom: 30px;
+
     font-size: 16px;
     line-height: 1.19;
 
@@ -225,9 +274,18 @@ h2{
 
 
 .footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+
     background-color: var(--footer-background-color);
+
+    outline: 2px solid tomato;
 }
 
+.footer .logo{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
 .footer-adress{
     font-size: 14px;
     line-height: 1.71;
@@ -235,6 +293,9 @@ h2{
 }
 
 .footer-adress .map{
+    margin-top: 0;
+    margin-bottom: 9px;
+
     color: #FFFFFF;
     text-decoration: none;
 }
@@ -262,9 +323,18 @@ h2{
 
 
 
-.portfolio{}
+.portfolio{
+    padding-top: 94px;
+    padding-bottom: 94px;
 
-.portfolio-nav{}
+    outline: 2px solid tomato;
+}
+
+.portfolio-nav{
+    margin-bottom: 50px;
+
+    outline: 2px solid green;
+}
 
 .button-portfolio{
     padding: 6px 22px;
@@ -283,14 +353,29 @@ h2{
     background-color: var(--button-back-portfolio-second);
 }
 
-.content-list{}
+.content-list{
+    outline: 2px solid violet;
+}
+
+.content-list>li{
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    background: #FFFFFF;
+}
 
 .content-list .link{
     text-decoration: none;
     color: var(--primary-text-color);
 }
 
+.content-list img{
+    margin-bottom: 20px;
+}
+
 .content-list h3{
+    margin-top: 0px;
+    margin-bottom: 4px;
+
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -299,6 +384,9 @@ h2{
 }
 
 .content-list p{
+    margin-top: 0px;
+    margin-bottom: 20px;
+
     font-size: 16px;
     line-height: 1.88;
 
