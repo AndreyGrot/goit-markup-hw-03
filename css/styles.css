@@ -16,12 +16,16 @@
   --button-back-portfolio-second:#2196F3;
   --button-col-portfolio-second:#ffffff;
 }
+
+
 /*сбросить точки в списках*/
 .list {
     padding: 0;
     margin: 0;
     list-style: none;
 }
+
+
 
 body {
     font-family: roboto, raleway sans-serif;
@@ -39,14 +43,49 @@ h2{
     text-align: center;
 }
 
-/*ХЕДЕР*/
+img{
+    display: block;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    
+  }
+
+
+  /*ХЕДЕР*/
 
 
 .page-header{
     background-color: var(--header-background-color);
 }
 
-.logo {
+.header-nav{
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    margin-right: 93px;
+
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
@@ -63,7 +102,20 @@ h2{
 .white{
     color: #ffffff;
 }
+
+.site-nav{
+    display: flex;
+}
+
+.site-nav .item:not(:last-child){
+    margin-right: 50px;
+}
+
 .site-nav .link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -79,7 +131,20 @@ h2{
     text-decoration: none;
 }
 
+.contact{
+    display: flex;
+    margin-left: auto;
+}
+
+.contact .item:not(:last-child){
+    margin-right: 50px;
+}
+
 .contact .link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -104,8 +169,6 @@ h2{
 
     text-align: center;
     background-color: #2F303A;
-
-    outline: 2px solid tomato;
 }
 
 .hero-title{
@@ -140,9 +203,6 @@ h2{
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-
-    display: flex;
-    align-items: center;
     letter-spacing: 0.06em;
 
     color: var(--button-color);
@@ -159,15 +219,17 @@ h2{
 }
 
 .benefits{
-
-    outline: 2px solid tomato;
 }
 
-.move-title{
-display: none;
+.benefits-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.benefits-list{}
+.benefits-list .item{
+    width: 270px;
+}
 
 .benefits-list .title{
     margin-top: 0;
@@ -194,8 +256,6 @@ display: none;
 
 .specialization{
     padding-top: 0;
-
-    outline: 2px solid tomato;
 }
 
 
@@ -204,7 +264,10 @@ display: none;
     margin-bottom: 50px;
 }
 
-.specialization-list{}
+.specialization-list{
+    display: flex;
+    justify-content: space-between;
+}
 
 
 /*наша команда*/
@@ -213,8 +276,6 @@ display: none;
 .team{
 
     background-color: var(--team-background-color);
-
-    outline: 2px solid tomato;
 }
 
 .team-title{
@@ -223,6 +284,9 @@ display: none;
 }
 
 .team-list{
+    display: flex;
+    justify-content: space-between;
+
     text-align: center;
     
 }
@@ -275,23 +339,34 @@ display: none;
     padding-bottom: 60px;
 
     background-color: var(--footer-background-color);
-
-    outline: 2px solid tomato;
 }
 
-.footer .logo{
+.footer-logo {
+    display: block;
     margin-top: 0;
     margin-bottom: 20px;
+
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+
+    color: var(--logo-color);
+    text-decoration: none;
 }
+
 .footer-adress{
     font-size: 14px;
     line-height: 1.71;
     font-style: normal;
 }
 
+.footer-list .item:not(:last-child){
+    margin-bottom: 9px;
+}
+
 .footer-adress .map{
     margin-top: 0;
-    margin-bottom: 9px;
 
     color: #FFFFFF;
     text-decoration: none;
@@ -322,7 +397,6 @@ display: none;
 
 .portfolio{
 
-    outline: 2px solid tomato;
 }
 
 .portfolio-nav{
@@ -353,7 +427,7 @@ display: none;
 }
 
 .content-list .item{
-    width: 370px;
+    width: 371px;
     height: 404px;
 
     border: 1px solid #EEEEEE;
